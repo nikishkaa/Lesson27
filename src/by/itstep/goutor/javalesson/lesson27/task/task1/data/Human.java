@@ -5,7 +5,8 @@ public class Human {
 
     protected String name;
     protected int age;
-    public Human(){
+
+    public Human() {
         name = "no name";
         age = 0;
     }
@@ -15,12 +16,16 @@ public class Human {
         this.age = age;
     }
 
-    public Student(Student student) {
-        this(student.name, student.age);
+    public Human(Human human) {
+        this(human.name, human.age);
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
 }

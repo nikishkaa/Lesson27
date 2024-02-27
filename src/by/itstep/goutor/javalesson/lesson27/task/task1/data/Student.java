@@ -4,8 +4,7 @@ public class Student extends Human {
     private double mark;
 
     public Student() {
-        name = "no name";
-        age = 0;
+        super();
         mark = 4;
     }
 
@@ -20,19 +19,20 @@ public class Student extends Human {
     }
 
     public Student(Student student) {
-        this(student.name, student.age, student.mark);
+        super(student);
+        mark = student.mark;
     }
 
-    public void getMark(double mark) {
-
+    public double getMark(double mark) {
+        return mark;
     }
 
     public void setMark(double mark) {
-
+        this.mark = mark;
     }
 
     public String toString() {
-        return name + ": age = " + age + "mark = " + mark;
+        return super.toString() + ",mark = " + mark;
     }
 
 }
