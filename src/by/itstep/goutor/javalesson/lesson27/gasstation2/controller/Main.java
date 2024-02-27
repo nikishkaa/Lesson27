@@ -18,7 +18,7 @@ public class Main {
 
         Truck truck = new Truck("Iveco", 12000, 28, 800);
 
-        Transport[] transports = {bus1, bus2, car1, car2, car3,truck };
+        Transport[] transports = {bus1, bus2, car1, car2, car3, truck};
 
 
         double total = GasStation.calcTotalGas(transports);

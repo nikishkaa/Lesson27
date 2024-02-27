@@ -12,9 +12,6 @@ public class Truck extends Transport{
         this.weight = weight;
     }
 
-    public String getBrand() {
-        return brand;
-    }
 
     public double getVolume() {
         return volume;
@@ -24,13 +21,8 @@ public class Truck extends Transport{
         return weight;
     }
 
-    public double getTank() {
-        return tank;
-    }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
+
 
     public void setVolume(double volume) {
         this.volume = volume;
@@ -40,9 +32,6 @@ public class Truck extends Transport{
         this.weight = weight;
     }
 
-    public void setTank(double tank) {
-        this.tank = tank;
-    }
 
     @Override
     public String toString() {
