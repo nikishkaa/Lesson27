@@ -8,8 +8,6 @@ public class Car extends Transport{
 
     public Car(String brand, double tank, double power) {
         super(brand, tank);
-        this.brand = brand;
-        this.tank = tank;
         this.power = power;
     }
 
